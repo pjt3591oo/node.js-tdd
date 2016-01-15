@@ -1,4 +1,4 @@
- /**
+/**
  * Created by mung on 2016-01-13.
  */
 
@@ -10,13 +10,13 @@ var expected, current;
 var mysql = require('mysql');
 var Promise = require('promise');
 
-var client = mysql.createConnection({ //외부 DB
+var client = mysql.createConnection({ //¿UºI DB
 	user:'*',
 	host:'*',
 	database:'*',
 	password:'*'
 });
-var client2 = mysql.createConnection({ //로컬 DB
+var client2 = mysql.createConnection({ //·IAA DB
 	user:'*',
 	database:'*',
 	password:'*'
@@ -84,4 +84,3 @@ client.query('SELECT *FROM userinfo WHERE id="619930534812763" || id="1674200689
 		console.log(err);
 	}
 });
-
